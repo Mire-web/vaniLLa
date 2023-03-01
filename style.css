@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Fredoka+One&family=Mynerve&family=Pacifico&family=Roboto:ital@0;1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url("./glassbowl.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+#big-ball{
+    position: relative;
+}
+
+#big-ball span{
+    position: absolute;
+    right: -80px;
+    top: -250px;
+    width: 900px;
+    height: 900px;
+    background: hsl(340, 79%, 55%);
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#links{
+    margin-right: 20px;
+}
+
+a{
+    color: red;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#logo{
+    margin-left: 10px;
+    margin-top: 20px;
+    border-top: 1px solid black;
+    font-family: 'Pacifico';
+    border-bottom: 1px solid black;
+    transform: rotate(-15deg);
+}
+
+#order-btn{
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+    font-family: 'Fredoka One', cursive;
+    box-shadow: 1px 1px 10px  black ;
+    padding: 5px;
+}
+
+.nav_link{
+    margin-left: 10px;
+    font-family: 'Roboto';
+}
+
+#intro{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-top: 30px;
+}
+
+#intro_text{
+    font-size: 50px;
+    font-family: 'Fredoka One', cursive;
+}
+
+em{
+    color: red;
+    font-size: 55px;
+    font-family: 'Pacifico', cursive;
+}
+
+#display_img{
+    width: 35vw;
+    border: 2px solid red;
+}
+
+#products{
+    display: flex;
+    width: 100%;
+    border: 1px solid red;
+}
+
+span{
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-left: 3px solid;
+    border-bottom: 3px solid;
+}
+
+#left_angle{
+    justify-self: flex-start;
+    transform: rotate(45deg);
+}
+
+#right_angle{
+    transform: rotate(-130deg);
+    justify-self: flex-end;
+}
+
+#slides{
+    display: flex;
+}
+
+.slide img{
+    width: 150px;
+
+}
+
+#order{
+    position: absolute;
+    width: 300px;
+    top: 110%;
+    left: 75px;
+}
+
+#text{
+    margin-bottom: 30px;
+    font-family: 'Roboto', san-serif;
+}
+
+#order_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    height: 50px;
+    font-size: 25px;
+    font-family: 'Fredoka One', cursive;
+    background-color: red;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.right_text{
+    position: absolute;
+    top: 85%;
+    transform: rotate(90deg);
+}
+
+.right_text em{
+    font-family: 'mynerve', cursive;
+    font-size: 150px;
+}
+
+#text-1{
+    right: -170px;
+}
+
+#text-2{
+    right: -70px;
+    color: black;
+}
+
+#text-2 em{
+    color:black;
+}
+
+#text-3{
+    right: 30px;
+}
