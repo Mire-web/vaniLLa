@@ -52,6 +52,12 @@ a{
     margin-right: 20px;
 }
 
+object{
+    width: 50px;
+    margin-right: -240px;
+    margin-top: 20px;
+}
+
 #logo{
     margin-left: 10px;
     margin-top: 20px;
@@ -185,4 +191,68 @@ span{
 
 #text-3{
     right: 30px;
+}
+
+@media (max-width:1050px) {
+    body{
+        background: url("./strawberry_cones.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .right_text em{
+        display: none;
+    }
+    #text{
+        color: white;
+    }
+}
+
+@media (max-width: 852px) {
+    body{
+        background: url("./bowl_sprinkle.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #text{
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+    #order{
+        display: flex;
+        flex-direction: column;
+        left: 50%;
+        transform: translate(-50%);
+        align-items: center;
+    }
+}
+
+@media (max-width:687px) {
+    body{
+        background: url("./bowl_sprinkle.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width:600px) {
+    body{
+        background: url("./sprinkle.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .nav_link, #order_btn{
+        display: none;
+    }
+    #logo{
+        color: white;
+    }
+    #intro_text{
+        color: white;
+        font-size: 35px;
+    }
+    em{
+        font-size: 35px;
+    }
 }
