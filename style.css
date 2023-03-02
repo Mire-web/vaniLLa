@@ -252,6 +252,9 @@ span{
         color: white;
         font-size: 35px;
     }
+    #text{
+        color: white;
+    }
     em{
         font-size: 35px;
     }
