@@ -67,7 +67,8 @@ object{
     border-top: 1px solid black;
     font-family: 'Pacifico';
     border-bottom: 1px solid black;
-    transform: rotate(-15deg);
+    transform: rotate(15deg);
+    animation: logo 1.5s forwards;
 }
 
 #order-btn{
@@ -80,8 +81,8 @@ object{
 }
 
 .nav_link{
-    margin-left: 10px;
     font-family: 'Roboto';
+    animation: navin 1.5s linear forwards;
 }
 
 #intro{
@@ -94,6 +95,12 @@ object{
 #intro_text{
     font-size: 50px;
     font-family: 'Fredoka One', cursive;
+    animation: load 1.5s forwards;
+}
+
+#intro em{
+    color: white;
+    animation: loadup 2.5s forwards;
 }
 
 em{
@@ -143,8 +150,9 @@ span{
 #order{
     position: absolute;
     width: 300px;
-    top: 110%;
+    top: 260%;
     left: 75px;
+    animation: orderup 1s linear forwards;
 }
 
 #text{
@@ -185,15 +193,73 @@ span{
 
 #text-2{
     right: -70px;
-    color: black;
 }
 
 #text-2 em{
-    color:black;
+    animation: loadup2 1.5s forwards;
 }
 
 #text-3{
     right: 30px;
+}
+
+@keyframes navin {
+    from{
+        margin-left: -100px;
+    }
+    to{
+        margin-left: 10px;
+    }
+}
+
+
+@keyframes load {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes loadup {
+    from{
+        margin-left: -100px;
+        color:white;
+    }
+    to{
+        margin-left: 0;
+        color: red;
+    }
+}
+
+@keyframes loadup2 {
+    from{
+        color: red;
+        opacity: 0;
+    }
+    to{
+        color:black;
+        opacity: 1;
+    }
+}
+
+@keyframes logo{
+    from{
+        transform: rotate(15deg);
+    }
+    to{
+        transform: rotate(-15deg);
+    }
+}
+
+@keyframes orderup {
+    from{
+        top: 260%;
+    }
+    to{
+        top: 110%;
+    }
 }
 
 @media (max-width:1050px) {
@@ -225,15 +291,25 @@ span{
     #text{
         color: black;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 25px;
         text-align: center;
     }
     #order{
         display: flex;
         flex-direction: column;
         left: 50%;
+        width: 450px;
         transform: translate(-50%);
         align-items: center;
+    }
+    
+    @keyframes orderup {
+        from{
+            top: 260%;
+        }
+        to{
+            top: 160%;
+        }
     }
 }
 
@@ -245,6 +321,24 @@ span{
     }
     object{
         display: none;
+    }
+
+    
+    #order{
+        width: 300px;
+    }
+
+    #text{
+        font-size: 18px;
+    }
+    
+    @keyframes orderup {
+        from{
+            top: 260%;
+        }
+        to{
+            top: 130%;
+        }
     }
 }
 
@@ -270,9 +364,10 @@ span{
         font-size: 35px;
     }
     #text{
-        color: red;
+        color: white;
     }
     em{
         font-size: 35px;
     }
+
 }
