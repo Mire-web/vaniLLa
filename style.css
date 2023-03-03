@@ -208,6 +208,9 @@ span{
     #text{
         color: white;
     }
+    object{
+        display: none;
+    }
 }
 
 @media (max-width: 852px) {
@@ -215,6 +218,9 @@ span{
         background: url("./bowl_sprinkle.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+    }
+    object{
+        display: none;
     }
     #text{
         color: black;
