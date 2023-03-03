@@ -53,8 +53,12 @@ a{
 
 object{
     width: 50px;
-    margin-right: -240px;
+    margin-right: -220px;
     margin-top: 20px;
+}
+
+object{
+    display: none;
 }
 
 #logo{
@@ -243,6 +247,9 @@ span{
     }
     .nav_link, #order_btn{
         display: none;
+    }
+    object{
+        display: block;
     }
     #logo{
         color: white;
