@@ -243,6 +243,9 @@ span{
         background-size: cover;
         background-repeat: no-repeat;
     }
+    object{
+        display: none;
+    }
 }
 
 @media (max-width:600px) {
