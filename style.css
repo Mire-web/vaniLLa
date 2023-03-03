@@ -9,7 +9,6 @@ body{
     background: url("./glassbowl.jpg") no-repeat;
     background-size: cover;
     position: relative;
-    overflow: hidden;
 }
 
 #big-ball{
@@ -253,7 +252,7 @@ span{
         font-size: 35px;
     }
     #text{
-        color: white;
+        color: red;
     }
     em{
         font-size: 35px;
